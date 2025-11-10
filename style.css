@@ -1,0 +1,102 @@
+body{
+    font-family: 'Special Elite', monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f9f9f9 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+#navbar{
+    width: 700px;
+    margin-left: auto;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+#navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+#navbar a, li{
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+#navbar a:hover{
+    font-size: 20px;
+    color: hsla(0, 0%, 0%, 0.459);
+}
+
+nav a.active {
+  color: hsla(0, 0%, 0%, 0.459); /* verde-claro tipo tela de terminal */
+  text-shadow: 0 0 8px #f9fcfb;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 6px #5e5e5e, 0 0 12px #928282;
+  }
+  50% {
+    opacity: 0.7;
+    text-shadow: 0 0 2px #000000;
+  }
+}
+
+h1{
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+p{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.gears {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+
+/* Base para todas as engrenagens */
+.gear {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  animation: rotate 8s linear infinite;
+}
+
+/* Posições individuais */
+.gear1 {
+  top: 0;
+  left: 0;
+  animation-duration: 8s;  /* Velocidade diferente */
+}
+
+.gear2 {
+  top: 40px;
+  left: 80px;
+  width: 70px;
+  animation-duration: 10s;
+  animation-direction: reverse; /* Gira no sentido oposto */
+}
+
+/* Animação de rotação */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
