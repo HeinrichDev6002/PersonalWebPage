@@ -52,8 +52,9 @@ h1{
 
     margin-top: 120px;
     margin-bottom: 20px;
+    text-decoration-line:underline;
 }
-p{
+p, dd{
     width: 60%;
     margin: 0 auto;
     font-size: 17px;
@@ -99,4 +100,22 @@ p{
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* Specific Products CSS below */
+
+#second-first-letter{
+  background-color: #000000;
+  color: white;
+  font-size: 1.2em;
+  padding: 2px;
+}
+.products dd{
+  border-left: #000000 solid;
+  padding-left: 30px;
+}
+.products dt{
+  margin: 2px;
+  font-size: 1.5rem;
 }
