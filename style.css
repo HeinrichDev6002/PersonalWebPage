@@ -4,6 +4,7 @@ body{
     padding: 0;
     text-align: center;
     background: #f9f9f9 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    /* Viver significa não voltar atrás. */
 }
 #navbar{
     width: 700px;
@@ -114,8 +115,15 @@ p, dd{
 .products dd{
   border-left: #000000 solid;
   padding-left: 30px;
+  margin-bottom: 30px;
+  box-shadow: #412727 2px 5px 5px;
 }
 .products dt{
   margin: 2px;
   font-size: 1.5rem;
+}
+.products dd:hover{
+  background-color: #f9fcfb;
+  font-size: 1.2em;
+  box-shadow: #b87878 5px 9px 5px;
 }
