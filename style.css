@@ -127,3 +127,22 @@ p, dd{
   font-size: 1.2em;
   box-shadow: #b87878 5px 9px 5px;
 }
+.contact{
+  width: 60%;
+  margin: auto;
+  margin-top: 23px;
+  border: solid;
+}
+.contact li{
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 15px;
+}
+.contact a{
+  color: hsla(0, 0%, 0%, 0.863);
+  text-decoration: none;
+}
+.contact a:hover{
+  color: hsla(0, 0%, 0%, 0.459);
+  font-size: 30px;
+}
