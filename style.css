@@ -7,7 +7,7 @@ body{
     /* Viver significa não voltar atrás. */
 }
 #navbar{
-    width: 700px;
+    width: 90%;
     margin-left: auto;
     margin-top: 30px;
     letter-spacing: 1px;
@@ -145,4 +145,110 @@ p, dd{
 .contact a:hover{
   color: hsla(0, 0%, 0%, 0.459);
   font-size: 30px;
+}
+
+/* ====== Ajustes para telas menores ====== */
+@media (max-width: 768px) {
+
+  body {
+    background: #fafafa; /* ligeiramente mais claro no mobile */
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    background-size: cover;
+  }
+
+  /* Navbar compacta */
+  #navbar {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  #navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+  }
+
+  #navbar a, #navbar li {
+    font-size: 18px;
+    margin: 5px 10px;
+  }
+
+  /* Mantém o brilho do link ativo */
+  nav a.active {
+    color: #222;
+    text-shadow: 0 0 4px #999;
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  /* Títulos e textos */
+  h1 {
+    font-size: 1.6rem;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+  }
+
+  p, dd {
+    width: 85%;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  /* Engrenagens — redimensionar e reposicionar */
+  .gears {
+    position: relative;
+    top: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .gear {
+    width: 50px;
+    opacity: 0.7;
+    animation-duration: 10s;
+  }
+
+  /* Produtos e seções */
+  .products dd {
+    padding-left: 15px;
+    box-shadow: #412727 1px 3px 3px;
+    font-size: 0.95em;
+  }
+
+  .contact {
+    width: 85%;
+    font-size: 0.95em;
+    margin-top: 20px;
+  }
+
+  .contact li {
+    margin: 10px 0;
+  }
+
+  .contact a:hover {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajuste extra para telas bem pequenas */
+  #navbar a {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .gear {
+    width: 40px;
+  }
+
+  p, dd {
+    width: 90%;
+  }
 }
