@@ -115,7 +115,7 @@ p, dd{
 .products dd{
   border-left: #000000 solid;
   padding-left: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 25%;
   box-shadow: #412727 2px 5px 5px;
 }
 .products dt{
@@ -163,10 +163,11 @@ p, dd{
   }
 
   #navbar ul {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 15px;
+    gap: 1px;
     padding: 0;
+    align-items: center;
   }
 
   #navbar a, #navbar li {
