@@ -2,6 +2,7 @@ body, html{
   margin: 0;
   padding: 0%;
   background-color: #ededed;
+  font-family: "EB Garamond", sans-serif;
   /* background-color: #EDEDED;
   hsl(198, 66%, 70%); */
 }
@@ -20,11 +21,11 @@ body, html{
   color: #ffffff;
 }
 #main-text, h1{
-  text-align: left;
+  text-align: center;
   text-justify: auto;
   line-height: 1.2em;
   color: #000000;
-  padding: 9px 15px;
+  
   font-family: "EB Garamond";
 }
 #main-nav{
@@ -34,6 +35,10 @@ body, html{
 #main-nav i, a{
   color: #000000;
   text-decoration: none;
+}
+#main-article{
+  width: 85%;
+  margin: auto;
 }
 span{
   padding: 9px 5px;
@@ -46,4 +51,15 @@ h1{
   font-family: "EB Garamond", serif;
   font-weight: 400;
   /*color: #ededed;*/
+}
+
+@media(min-width: 600px){
+  h1{
+    margin-top: 10%;
+    font-size: 2.5rem;
+  }
+  #main-header span{
+    padding: 12px 22px;
+  }
+
 }
