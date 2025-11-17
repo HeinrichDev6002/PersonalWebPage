@@ -1,255 +1,49 @@
-body{
-    font-family: 'Special Elite', monospace;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: #f9f9f9 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-    /* Viver significa não voltar atrás. */
-}
-#navbar{
-    width: 90%;
-    margin-left: auto;
-    margin-top: 30px;
-    letter-spacing: 1px;
-}
-#navbar ul{
-    display: flex;
-    justify-content: flex-end;
-    gap: 40px;
-}
-#navbar a, li{
-    color: hsl(0, 0%, 0%);
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 25px;
-    margin: 0 20px;
+body, html{
+  margin: 0;
+  padding: 0%;
+  background-color: #ededed;
+  /* background-color: #EDEDED;
+  hsl(198, 66%, 70%); */
 }
 
-#navbar a:hover{
-    font-size: 20px;
-    color: hsla(0, 0%, 0%, 0.459);
+#main-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #722f37;
+  border-bottom: #722f37 solid;
 }
-
-nav a.active {
-  color: hsla(0, 0%, 0%, 0.459); /* verde-claro tipo tela de terminal */
-  text-shadow: 0 0 8px #f9fcfb;
-  animation: pulse 2s ease-in-out infinite;
+#main-header p, i{
+  margin: 9px 9px;
+  text-decoration: none;
+  color: #ffffff;
 }
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-    text-shadow: 0 0 6px #5e5e5e, 0 0 12px #928282;
-  }
-  50% {
-    opacity: 0.7;
-    text-shadow: 0 0 2px #000000;
-  }
+#main-text, h1{
+  text-align: left;
+  text-justify: auto;
+  line-height: 1.2em;
+  color: #000000;
+  padding: 9px 15px;
+  font-family: "EB Garamond";
+}
+#main-nav{
+  display: flex;
+  justify-content: space-evenly;
+}
+#main-nav i, a{
+  color: #000000;
+  text-decoration: none;
+}
+span{
+  padding: 9px 5px;
 }
 
 h1{
-    font-weight: normal;
-    letter-spacing: 1px;
-    text-align: center;
-
-    margin-top: 120px;
-    margin-bottom: 20px;
-    text-decoration-line:underline;
-}
-p, dd{
-    width: 60%;
-    margin: 0 auto;
-    font-size: 17px;
-    line-height: 1.6;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.gears {
-  position: absolute;
-  top: 100px;
-  left: 80px;
-}
-
-/* Base para todas as engrenagens */
-.gear {
-  position: absolute;
-  width: 100px;
-  height: auto;
-  animation: rotate 8s linear infinite;
-}
-
-/* Posições individuais */
-.gear1 {
-  top: 0;
-  left: 0;
-  animation-duration: 8s;  /* Velocidade diferente */
-}
-
-.gear2 {
-  top: 40px;
-  left: 80px;
-  width: 70px;
-  animation-duration: 10s;
-  animation-direction: reverse; /* Gira no sentido oposto */
-}
-
-/* Animação de rotação */
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-/* Specific Products CSS below */
-
-#second-first-letter{
-  background-color: #000000;
-  color: white;
-  font-size: 1.2em;
-  padding: 2px;
-}
-.products dd{
-  border-left: #000000 solid;
-  padding-left: 30px;
-  margin-bottom: 25%;
-  box-shadow: #412727 2px 5px 5px;
-}
-.products dt{
-  margin: 2px;
-  font-size: 1.5rem;
-}
-.products dd:hover{
-  background-color: #f9fcfb;
-  font-size: 1.2em;
-  box-shadow: #b87878 5px 9px 5px;
-}
-.contact{
-  width: 60%;
-  margin: auto;
-  margin-top: 23px;
-  border: solid;
-}
-.contact li{
-  text-align: justify;
-  text-justify: inter-word;
-  margin: 15px;
-}
-.contact a{
-  color: hsla(0, 0%, 0%, 0.863);
-  text-decoration: none;
-}
-.contact a:hover{
-  color: hsla(0, 0%, 0%, 0.459);
-  font-size: 30px;
-}
-
-/* ====== Ajustes para telas menores ====== */
-@media (max-width: 768px) {
-
-  body {
-    background: #fafafa; /* ligeiramente mais claro no mobile */
-    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-    background-size: cover;
-  }
-
-  /* Navbar compacta */
-  #navbar {
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  #navbar ul {
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 1px;
-    padding: 0;
-    align-items: center;
-  }
-
-  #navbar a, #navbar li {
-    font-size: 18px;
-    margin: 5px 10px;
-  }
-
-  /* Mantém o brilho do link ativo */
-  nav a.active {
-    color: #222;
-    text-shadow: 0 0 4px #999;
-    animation: pulse 3s ease-in-out infinite;
-  }
-
-  /* Títulos e textos */
-  h1 {
-    font-size: 1.6rem;
-    margin-top: 80px;
-    margin-bottom: 15px;
-    text-decoration: underline;
-  }
-
-  p, dd {
-    width: 85%;
-    font-size: 15px;
-    line-height: 1.5;
-    text-align: justify;
-  }
-
-  /* Engrenagens — redimensionar e reposicionar */
-  .gears {
-    position: relative;
-    top: 10px;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .gear {
-    width: 50px;
-    opacity: 0.7;
-    animation-duration: 10s;
-  }
-
-  /* Produtos e seções */
-  .products dd {
-    padding-left: 15px;
-    box-shadow: #412727 1px 3px 3px;
-    font-size: 0.95em;
-  }
-
-  .contact {
-    width: 85%;
-    font-size: 0.95em;
-    margin-top: 20px;
-  }
-
-  .contact li {
-    margin: 10px 0;
-  }
-
-  .contact a:hover {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Ajuste extra para telas bem pequenas */
-  #navbar a {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 1.4rem;
-  }
-
-  .gear {
-    width: 40px;
-  }
-
-  p, dd {
-    width: 90%;
-  }
+  margin-top: 60%;
+  text-align: center;
+  color: #000000;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  /*color: #ededed;*/
 }
